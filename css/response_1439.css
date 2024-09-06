@@ -1,0 +1,1085 @@
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .cont
+    {
+        padding: 0 24px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 60px;
+    }
+
+    .block.big_m
+    {
+        margin-bottom: 120px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs .btn[data-level='level1']
+    {
+        font-size: 16px;
+
+        padding: 12px 20px;
+    }
+
+
+
+    /*----------
+        More
+    ----------*/
+    .more .btn
+    {
+        font-size: 18px;
+
+        padding: 20px 24px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item
+    {
+        padding: 0 24px 24px;
+    }
+
+
+    .accordion_item + .accordion_item
+    {
+        padding-top: 24px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        width: calc(100% - 80px);
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .data
+    {
+        padding: 24px 0;
+    }
+
+
+    header .links > * + *
+    {
+        margin-left: 24px;
+    }
+
+
+    header .search
+    {
+        width: 280px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_title
+    {
+        font-size: 52px;
+    }
+
+
+    * + .page_title
+    {
+        margin-top: 40px;
+    }
+
+
+    .page_head .row
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc
+    {
+        font-size: 18px;
+
+        margin-top: 16px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .text_block h2
+    {
+        font-size: 28px;
+    }
+
+    .text_block h3
+    {
+        font-size: 22px;
+    }
+
+
+    .text_block .info_block > div
+    {
+        width: calc(100% - 456px);
+    }
+
+
+    .text_block .cols .col.big
+    {
+        width: calc(100% - 456px);
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .cont
+    {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    .first_section .data
+    {
+        width: 552px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 56px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 20px;
+
+        width: 480px;
+        margin-top: 20px;
+    }
+
+
+    .first_section .link
+    {
+        margin-top: 48px;
+    }
+
+
+    .first_section .link a
+    {
+        font-size: 18px;
+
+        padding: 20px 36px;
+    }
+
+
+    .first_section .image
+    {
+        width: 520px;
+        margin-right: 48px;
+    }
+
+
+    .first_section .bg
+    {
+        width: 1024px;
+        height: 601px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .tabs .btn[data-level='level2']
+    {
+        padding: 16px;
+    }
+
+
+    .services .service
+    {
+        padding: 24px;
+    }
+
+
+    .services .service .title,
+    .services .service .desc
+    {
+        width: 408px;
+    }
+
+
+    .services .service .image,
+    .services .service .image.small
+    {
+        right: 32px;
+        bottom: 48px;
+
+        width: 440px;
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .swiper-slide
+    {
+        width: 380px;
+    }
+
+
+    .projects .project .info
+    {
+        padding: 24px;
+    }
+
+
+    .projects .project .name
+    {
+        font-size: 20px;
+    }
+
+
+    .projects .project .bottom
+    {
+        margin-top: 48px;
+    }
+
+
+    .projects .project .arr
+    {
+        width: 48px;
+        height: 48px;
+    }
+
+
+    .projects .project .arr .icon
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ .block_head
+    {
+        width: 452px;
+    }
+
+
+    .FAQ .accordion
+    {
+        width: calc(100% - 524px);
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .image
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    .contacts_info .about
+    {
+        width: calc(100% - 424px);
+        padding: 48px;
+    }
+
+
+
+    .contacts_info .info
+    {
+        width: 400px;
+        padding: 48px;
+
+        gap: 24px;
+    }
+
+
+    .contacts_info .info .icon + *
+    {
+        width: calc(100% - 94px);
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .data
+    {
+        padding: 48px;
+    }
+
+
+    .action_block .block_head
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .action_block .btn
+    {
+        font-size: 18px;
+
+        padding: 20px 40px;
+    }
+
+
+    .action_block .img
+    {
+        right: 80px;
+
+        width: 432px;
+    }
+
+
+
+    /*----------------
+        Routes map
+    ----------------*/
+    .routes_map .route
+    {
+        padding: 24px;
+    }
+
+
+    .routes_map .route .path
+    {
+        width: 300px;
+    }
+
+
+    .routes_map .route .info
+    {
+        width: calc(100% - 600px);
+    }
+
+
+    .routes_map .route .title
+    {
+        font-size: 20px;
+    }
+
+
+    .routes_map .route .price
+    {
+        padding: 0;
+    }
+
+
+    .routes_map .route .map_btn,
+    .routes_map .route .map_btn .icon
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+    .routes_map .route .btn
+    {
+        font-size: 18px;
+
+        padding: 16px 28px;
+    }
+
+
+    .routes_map .route .map
+    {
+        margin-top: 24px;
+        margin-bottom: 0;
+    }
+
+
+
+    /*-------------------
+        Projects list
+    -------------------*/
+    .projects_list .categories a
+    {
+        padding: 12px 16px;
+    }
+
+
+
+    .projects_list .project .spoler_btn
+    {
+        font-size: 16px;
+    }
+
+
+    .projects_list .project .features .val
+    {
+        font-size: 20px;
+    }
+
+
+    .projects_list .project .data .info
+    {
+        width: calc(100% - 500px);
+    }
+
+
+    .projects_list .project .data .thumb
+    {
+        width: 440px;
+        height: 280px;
+    }
+
+
+
+    /*------------------
+        Project info
+    ------------------*/
+    .project_info .head .image
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .project_info .head .desc
+    {
+        font-size: 20px;
+    }
+
+
+    .project_info .head .exp
+    {
+        font-size: var(--font_size);
+
+        width: 444px;
+        max-width: calc(100% - 40px);
+        margin-left: 40px;
+    }
+
+
+
+    .project_info .our_advantages
+    {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    .project_info .our_advantages .title
+    {
+        font-size: 28px;
+    }
+
+
+    .project_info .our_advantages .row
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*--------------------
+        Other projects
+    --------------------*/
+    .other_projects .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .other_projects .row > *
+    {
+        width: calc(25% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .other_projects .project
+    {
+        padding-right: 40px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .main_article
+    {
+        min-height: 340px;
+        padding: 24px;
+    }
+
+
+    .articles .main_article .date
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .articles .main_article .name
+    {
+        font-size: 28px;
+
+        width: 800px;
+    }
+
+
+    .articles .main_article .desc
+    {
+        width: 640px;
+    }
+
+
+
+    .articles .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .articles .row > *
+    {
+        width: calc(25% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .articles .row .article .name
+    {
+        font-size: var(--font_size);
+
+        margin-bottom: 40px;
+    }
+
+
+
+    .articles .list > * + *
+    {
+        margin-top: 24px;
+        padding-top: 24px;
+    }
+
+
+    .articles .list .article .name
+    {
+        font-size: 24px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head .image
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .article_info .head .desc
+    {
+        font-size: 20px;
+    }
+
+
+    .article_info .head .exp
+    {
+        font-size: var(--font_size);
+
+        width: 444px;
+        max-width: calc(100% - 40px);
+        margin-left: 40px;
+    }
+
+
+
+    /*--------------------
+        Other articles
+    --------------------*/
+    .other_articles .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .other_articles .row > *
+    {
+        width: calc(25% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .other_articles .article
+    {
+        padding-right: 40px;
+    }
+
+
+
+    /*-------------------
+        Services head
+    -------------------*/
+    .services_head .data
+    {
+        padding: 48px;
+    }
+
+
+    .services_head .data .methods
+    {
+        margin-left: -24px;
+    }
+
+
+    .services_head .data .methods .label
+    {
+        margin-left: 24px;
+    }
+
+
+    .services_head .data .methods .vals
+    {
+        max-width: calc(100% - 24px);
+        margin-left: 8px;
+    }
+
+
+    .services_head .data .btn
+    {
+        font-size: 18px;
+
+        padding: 20px 32px;
+    }
+
+
+
+    .services_head .advantages
+    {
+        margin-top: 24px;
+    }
+
+
+    .services_head .advantages .item
+    {
+        min-height: 240px;
+        padding: 24px;
+    }
+
+
+    .services_head .advantages .title
+    {
+        font-size: 28px;
+    }
+
+
+    .services_head .advantages .name
+    {
+        font-size: 18px;
+    }
+
+
+    .services_head .advantages .text_block
+    {
+        margin-top: 28px;
+    }
+
+
+    .services_head .advantages .method,
+    .services_head .advantages .tg_link
+    {
+        bottom: 32px;
+    }
+
+
+
+    /*-------------------
+        Services list
+    -------------------*/
+    .services_list .item + .item
+    {
+        margin-top: 24px;
+        padding-top: 40px;
+    }
+
+
+    .services_list .item .link
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*-------------------
+        Services grid
+    -------------------*/
+    .services_grid .item .name
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .services_grid .item.shadow .icon,
+    .services_grid .item.shadow2 .icon,
+    .services_grid .item.shadow3 .icon
+    {
+        height: 80px;
+    }
+
+
+    .services_grid .item.big .icon
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .services_grid .item.very_big .exp
+    {
+        padding: 20px;
+    }
+
+
+    .services_grid .item.very_big .icon
+    {
+        right: 48px;
+        bottom: 48px;
+
+        width: 280px;
+        height: 280px;
+    }
+
+
+
+    /*------------------
+        Service info
+    ------------------*/
+    .service_info .item .title
+    {
+        font-size: 22px;
+    }
+
+
+    .service_info .item.big_w .desc
+    {
+        width: 588px;
+    }
+
+
+    .service_info .item .thumb
+    {
+        right: 24px;
+        bottom: 48px;
+
+        width: 168px;
+        height: 168px;
+    }
+
+
+
+    /*--------------------
+        Service prices
+    --------------------*/
+    .service_prices .item
+    {
+        min-height: 200px;
+    }
+
+
+    .service_prices .item.shadow2 .icon
+    {
+        height: 80px;
+    }
+
+    .service_prices .item.shadow .icon
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .service_prices .exp
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*----------------------------
+        Cooperation advantages
+    ----------------------------*/
+    .cooperation_advantages .text_block
+    {
+        font-size: 18px;
+    }
+
+
+    .cooperation_advantages .text_block ul li:before
+    {
+        top: 9px;
+    }
+
+
+    .cooperation_advantages .exp
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*---------------
+        Questions
+    ---------------*/
+    .questions .item .title
+    {
+        font-size: 20px;
+
+        min-height: 56px;
+        margin-bottom: 40px;
+    }
+
+
+
+    /*---------------
+        Solutions
+    ---------------*/
+    .solutions .item .name
+    {
+        font-size: 18px;
+    }
+
+
+    .solutions .item .desc
+    {
+        margin-bottom: 48px;
+    }
+
+
+
+    /*-------------------
+        Solution info
+    -------------------*/
+    .solution_info .head .image
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .solution_info .head .desc
+    {
+        font-size: 20px;
+    }
+
+
+    .solution_info .head .exp
+    {
+        font-size: var(--font_size);
+
+        width: 444px;
+        max-width: calc(100% - 40px);
+        margin-left: 40px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .image
+    {
+        width: 508px;
+        padding: 100px 40px 0;
+    }
+
+
+    .about_info .data
+    {
+        width: calc(100% - 532px);
+    }
+
+
+    .about_info .text_block
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    .about_info .stats .item .label
+    {
+        margin-bottom: 12px;
+        padding: 8px;
+    }
+
+
+    .about_info .stats .item .val
+    {
+        font-size: 24px;
+    }
+
+
+    .about_info .stats .item .exp
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*----------------
+        Guarantees
+    ----------------*/
+    .guarantees .item .name
+    {
+        font-size: 16px;
+    }
+
+
+    .guarantees .item.shadow .icon
+    {
+        height: 80px;
+    }
+
+
+    .guarantees .item.big .icon
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .guarantees .desc
+    {
+        padding: 24px;
+    }
+
+
+
+    /*-------------
+        Persons
+    -------------*/
+    .persons .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .persons .row > *
+    {
+        width: calc(25% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+
+    .persons .person .name
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-----------
+        Certs
+    -----------*/
+    .certs .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .certs .row > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .certs .cert
+    {
+        height: 280px;
+        padding: 24px;
+    }
+
+
+    .certs .cert .name
+    {
+        font-size: 28px;
+    }
+
+
+    .certs .cert .btn
+    {
+        width: 180px;
+        padding: 15px 19px;
+    }
+
+
+    .certs .cert .thumb
+    {
+        right: 24px;
+
+        width: 240px;
+        max-width: calc(100% - 48px);
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .data
+    {
+        padding: 48px 0;
+    }
+
+
+    footer .bottom
+    {
+        padding: 20px 0;
+    }
+}
