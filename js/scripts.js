@@ -170,6 +170,59 @@ document.addEventListener('DOMContentLoaded', function () {
 		project.toggleClass('open')
 		project.find('.data').slideToggle(300)
 	})
+
+
+	// Fancybox
+	Fancybox.defaults.autoFocus = false
+	Fancybox.defaults.trapFocus = false
+	Fancybox.defaults.dragToClose = false
+	Fancybox.defaults.placeFocusBack = false
+	Fancybox.defaults.l10n = {
+		CLOSE: 'Закрыть',
+		NEXT: 'Следующий',
+		PREV: 'Предыдущий',
+		MODAL: 'Вы можете закрыть это модальное окно нажав клавишу ESC'
+	}
+
+
+	// Zoom images
+	Fancybox.bind('.fancy_img', {
+		Image: {
+			zoom: false
+		},
+		Thumbs: {
+			autoStart: false
+		}
+	})
+
+
+	// Questions
+	$('.questions .item .head').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+		$(this).next().slideToggle(300)
+	})
+
+
+	// Animation
+	const boxes = document.querySelectorAll('.animate')
+
+	function scrollTracking(entries) {
+		for (const entry of entries) {
+			if (entry.target.classList.contains('animate')) {
+				if (entry.intersectionRatio >= 0.2 && !entry.target.classList.contains('animated')) {
+					entry.target.classList.add('animated')
+				}
+			}
+		}
+	}
+
+	const observer = new IntersectionObserver(scrollTracking, {
+		threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+	})
+
+	boxes.forEach(element => observer.observe(element))
 })
 
 
