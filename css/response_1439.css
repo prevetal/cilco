@@ -93,7 +93,8 @@
     /*---------------
         Page head
     ---------------*/
-    .page_title
+    .page_title,
+    .page_title.medium
     {
         font-size: 52px;
     }
@@ -311,33 +312,9 @@
     /*-------------------
         Contacts info
     -------------------*/
-    .contacts_info .image
+    .contacts_info .branches .contacts
     {
-        margin-bottom: 24px;
-    }
-
-
-
-    .contacts_info .about
-    {
-        width: calc(100% - 424px);
-        padding: 48px;
-    }
-
-
-
-    .contacts_info .info
-    {
-        width: 400px;
-        padding: 48px;
-
-        gap: 24px;
-    }
-
-
-    .contacts_info .info .icon + *
-    {
-        width: calc(100% - 94px);
+        margin-top: 40px;
     }
 
 
@@ -351,27 +328,17 @@
     }
 
 
-    .action_block .block_head
+    .action_block .form
     {
-        margin-bottom: 80px;
-    }
-
-
-    .action_block .btn
-    {
-        font-size: 18px;
-
-        padding: 20px 40px;
+        width: 480px;
     }
 
 
     .action_block .img
     {
-        right: 80px;
+        right: 48px;
 
-        width: 432px;
-        height: 276px;
-        padding: 20px;
+        width: calc(100% - 640px);
     }
 
 

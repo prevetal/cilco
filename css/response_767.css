@@ -80,6 +80,7 @@
 
 
     .page_title,
+    .page_title.medium,
     .page_title.small
     {
         font-size: 36px;
@@ -233,11 +234,27 @@
     /*-------------------
         Contacts info
     -------------------*/
-    .contacts_info .about .title
+    .contacts_info .map
     {
-        font-size: 20px;
+        width: calc(100% + 48px);
+        height: 280px;
+        margin-right: -24px;
+        margin-left: -24px;
+    }
 
-        margin-bottom: 20px;
+
+
+    .contacts_info .branches .row
+    {
+        margin-left: 0;
+    }
+
+
+    .contacts_info .branches .row > *
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
     }
 
 
@@ -247,9 +264,7 @@
     ------------------*/
     .action_block .data
     {
-        padding-bottom: 180px;
-
-        text-align: center;
+        padding: 30px 30px 200px;
     }
 
 
@@ -259,26 +274,14 @@
 
         width: 100%;
         margin-bottom: 24px;
-    }
 
-
-    .action_block .btn
-    {
-        font-size: 14px;
-
-        padding: 12px 24px;
+        text-align: center;
     }
 
 
     .action_block .img
     {
-        right: 0;
-        left: 0;
-
-        width: 224px;
-        height: 152px;
-        margin: 0 auto;
-        padding: 16px;
+        width: 260px;
     }
 
 
@@ -969,10 +972,9 @@
     footer .contacts .check_order_btn
     {
         position: absolute;
-        top: 100%;
         right: 0;
+        bottom: 1px;
 
-        margin-top: -4px;
         margin-left: 0;
     }
 }

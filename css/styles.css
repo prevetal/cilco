@@ -209,7 +209,6 @@ button
     overflow: clip;
     flex-direction: column;
 
-    min-width: 375px;
     min-height: 100%;
 
     background: var(--bg);
@@ -1127,6 +1126,12 @@ header .phone a
 }
 
 
+.page_title.medium
+{
+    font-size: 56px;
+}
+
+
 .page_title.small
 {
     font-size: 48px;
@@ -1486,6 +1491,100 @@ header .phone a
 .form .nice-select.open + .arr
 {
     transform: rotate(180deg);
+}
+
+
+.form .agree
+{
+    margin-top: 16px;
+}
+
+
+.form .checkbox
+{
+    position: relative;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    min-height: 17px;
+    padding-left: 18px;
+
+    cursor: pointer;
+
+    color: #344966;
+}
+
+
+.form .checkbox input
+{
+    display: none;
+}
+
+
+.form .checkbox .check
+{
+    position: absolute;
+    top: 2px;
+    left: 0;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 14px;
+    height: 15px;
+}
+
+
+.form .checkbox .check:before
+{
+    position: absolute;
+
+    display: block;
+
+    width: 11px;
+    height: 11px;
+    margin: auto;
+
+    content: '';
+    transition: opacity .2s linear;
+    pointer-events: none;
+
+    border: 1px solid;
+    border-radius: 2px;
+
+    inset: 0;
+}
+
+
+.form .checkbox .check svg
+{
+    display: block;
+
+    width: 14px;
+    height: 15px;
+
+    transition: opacity .2s linear;
+
+    opacity: 0;
+}
+
+
+.form .checkbox input:checked ~ .check:before
+{
+    opacity: 0;
+}
+
+
+.form .checkbox input:checked ~ .check svg
+{
+    opacity: 1;
 }
 
 
@@ -2271,6 +2370,7 @@ header .phone a
     background: #b4cded;
 }
 
+
 .action_block .data:before
 {
     position: absolute;
@@ -2297,8 +2397,6 @@ header .phone a
 {
     position: relative;
     z-index: 3;
-
-    margin-bottom: 96px;
 }
 
 
@@ -2323,11 +2421,33 @@ header .phone a
 }
 
 
+.action_block .form
+{
+    position: relative;
+    z-index: 3;
+
+    width: 555px;
+    max-width: 100%;
+}
+
+
+.action_block .form .line
+{
+    margin-bottom: 8px;
+}
+
+
+.action_block .form .submit
+{
+    padding-top: 8px;
+}
+
+
 .action_block .img
 {
     position: absolute;
     z-index: 1;
-    right: 100px;
+    right: 60px;
     bottom: 0;
 
     display: flex;
@@ -2336,9 +2456,7 @@ header .phone a
     flex-wrap: wrap;
     justify-content: center;
 
-    width: 448px;
-    height: 308px;
-    padding: 24px;
+    width: 583px;
 
     pointer-events: none;
 
@@ -2347,7 +2465,15 @@ header .phone a
 }
 
 
-.action_block .img svg
+.action_block .img img
+{
+    display: block;
+
+    width: 100%;
+}
+
+
+/* .action_block .img svg
 {
     display: block;
 
@@ -2366,7 +2492,7 @@ header .phone a
 .action_block.animated .img svg path
 {
     animation: draw 3s forwards .3s;
-}
+} */
 
 
 
@@ -2893,8 +3019,8 @@ header .phone a
     margin-top: 16px;
     padding: 24px 16px;
 
-    color: #fff;
-    background: #0d1821;
+    color: #344966;
+    background: #fff;
 }
 
 
@@ -4083,105 +4209,43 @@ header .phone a
 /*-------------------
     Contacts info
 -------------------*/
-.contacts_info .image
+.contacts_info .map
 {
     position: relative;
 
+    overflow: hidden;
+
+    height: 360px;
     margin-bottom: 32px;
 
     background: #ddd;
 }
 
 
-.contacts_info .image:after
+
+.contacts_info .branches .row
 {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
+    justify-content: space-between;
 
-    display: block;
-
-    width: 100%;
-    height: 100%;
-
-    content: '';
-    pointer-events: none;
-
-    background: rgba(0, 0, 0, .24);
+    margin-bottom: -48px;
+    margin-left: -32px;
 }
 
 
-.contacts_info .image img
+.contacts_info .branches .row > *
 {
-    display: block;
-
-    width: 100%;
+    width: 330px;
+    max-width: calc(33.333% - 32px);
+    margin-bottom: 48px;
+    margin-left: 32px;
 }
 
 
-
-.contacts_info .row
+.contacts_info .branches .address
 {
-    align-content: stretch;
-    align-items: stretch;
-}
+    font-weight: 500;
+    line-height: calc(100% + 4px);
 
-
-
-.contacts_info .about
-{
-    width: calc(100% - 507px);
-    padding: 56px 60px;
-
-    border-radius: 12px;
-    background: #fff;
-}
-
-
-.contacts_info .about .title
-{
-    font-size: 24px;
-    font-weight: 800;
-    line-height: calc(100% + 8px);
-
-    margin-bottom: 40px;
-
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-}
-
-
-.contacts_info .about .text_block
-{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 140%;
-
-    color: #32373a;
-}
-
-
-
-.contacts_info .info
-{
-    display: flex;
-    flex-direction: column;
-
-    width: 495px;
-    max-width: 100%;
-    margin-left: auto;
-    padding: 56px 60px;
-
-    border-radius: 12px;
-    background: #fff;
-
-    gap: 25px;
-}
-
-
-.contacts_info .info .item
-{
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
@@ -4190,95 +4254,71 @@ header .phone a
 }
 
 
-.contacts_info .info .icon
-{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    width: 70px;
-    height: 70px;
-
-    color: #fff;
-    border-radius: 50%;
-}
-
-
-.contacts_info .info .icon.blue
-{
-    background: linear-gradient(135deg, #007bc2 0%, #00a2ff 100%);
-    box-shadow: 0 10px 20px 0 rgba(1, 142, 223, .35);
-}
-
-.contacts_info .info .icon.red
-{
-    background: linear-gradient(135deg, #c10e0e 0%, #ff6565 100%);
-    box-shadow: 0 10px 20px 0 rgba(223, 55, 55, .30);
-}
-
-.contacts_info .info .icon.violet
-{
-    background: linear-gradient(135deg, #c245cd 0%, #aa399f 100%);
-    box-shadow: 0 10px 20px rgba(175, 59, 167, .30);
-}
-
-
-.contacts_info .info .icon svg
+.contacts_info .branches .address .icon
 {
     display: block;
 
-    width: 24px;
-    height: 24px;
-}
-
-.contacts_info .info .icon.blue svg
-{
     width: 20px;
     height: 20px;
-    margin-left: 4px;
+
+    color: #ff7001;
 }
 
 
-.contacts_info .info .icon + *
+.contacts_info .branches .address span
 {
     align-self: center;
 
-    width: calc(100% - 100px);
+    width: calc(100% - 32px);
 }
 
 
-.contacts_info .info .label
+.contacts_info .branches .contacts
 {
-    font-size: 14px;
-    font-weight: 800;
-    line-height: calc(100% + 4px);
-
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
+    margin-top: 48px;
 }
 
 
-.contacts_info .info .desc
+.contacts_info .branches .contacts .label
 {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: calc(100% + 4px);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
 
-    margin-top: 9px;
+    margin-bottom: 12px;
 
     color: #a4abb5;
 }
 
 
-.contacts_info .info .desc > * + *
+.contacts_info .branches .contacts .phone
 {
-    margin-top: 4px;
+    font-weight: 500;
+    line-height: calc(100% + 4px);
 }
 
 
-.contacts_info .info .desc a
+.contacts_info .branches .contacts .phone a
+{
+    white-space: nowrap;
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+.contacts_info .branches .contacts .email
+{
+    font-weight: 500;
+    line-height: calc(100% + 4px);
+
+    margin-top: 4px;
+
+    color: #003db6;
+}
+
+
+.contacts_info .branches .contacts .email a
 {
     white-space: nowrap;
     text-decoration: none;
@@ -5990,7 +6030,7 @@ footer .logo img
 {
     display: block;
 
-    width: 75px;
+    height: 24px;
 }
 
 
@@ -6138,41 +6178,15 @@ footer .contacts .check_order_btn:hover
 
 
 
-footer .copyright
-{
-    font-family: var(--font_family2);
-    font-size: 12px;
-    line-height: calc(100% + 6px);
-
-    color: #eff2f9;
-
-    font-variant-numeric: lining-nums proportional-nums;
-}
-
-
-
-footer .exp
-{
-    font-family: var(--font_family2);
-    font-size: 12px;
-    line-height: calc(100% + 6px);
-
-    margin-top: 8px;
-
-    color: #eff2f9;
-}
-
-
-
 footer .socials
 {
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: flex-end;
 
-    margin-left: auto;
+    margin-top: 24px;
 
     gap: 16px;
 }
@@ -6201,4 +6215,30 @@ footer .socials .icon
 
     width: 24px;
     height: 24px;
+}
+
+
+
+footer .copyright
+{
+    font-family: var(--font_family2);
+    font-size: 12px;
+    line-height: calc(100% + 6px);
+
+    color: #eff2f9;
+
+    font-variant-numeric: lining-nums proportional-nums;
+}
+
+
+
+footer .exp
+{
+    font-family: var(--font_family2);
+    font-size: 12px;
+    line-height: calc(100% + 6px);
+
+    margin-top: 8px;
+
+    color: #eff2f9;
 }

@@ -70,7 +70,9 @@
     /*---------------
         Page head
     ---------------*/
-    .page_title
+    .page_title,
+    .page_title.medium,
+    .page_title.small
     {
         font-size: 48px;
     }
@@ -299,37 +301,6 @@
 
 
 
-    /*-------------------
-        Contacts info
-    -------------------*/
-    .contacts_info .about
-    {
-        width: calc(100% - 384px);
-        padding: 32px;
-    }
-
-
-    .contacts_info .about .title
-    {
-        margin-bottom: 32px;
-    }
-
-
-
-    .contacts_info .info
-    {
-        width: 360px;
-        padding: 32px;
-    }
-
-
-    .contacts_info .info .desc
-    {
-        margin-top: 8px;
-    }
-
-
-
     /*------------------
         Action block
     ------------------*/
@@ -339,26 +310,17 @@
     }
 
 
-    .action_block .block_head
+    .action_block .form
     {
-        margin-bottom: 64px;
-    }
-
-
-    .action_block .btn
-    {
-        font-size: 16px;
-
-        padding: 16px 32px;
+        width: 456px;
     }
 
 
     .action_block .img
     {
-        right: 64px;
+        right: 32px;
 
-        width: 348px;
-        height: 232px;
+        width: calc(100% - 564px);
     }
 
 
@@ -930,6 +892,13 @@
 
 
     footer .contacts .check_order_btn
+    {
+        margin-top: 0;
+        margin-left: 24px;
+    }
+
+
+    footer .socials
     {
         margin-top: 0;
         margin-left: 24px;

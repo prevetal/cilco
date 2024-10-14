@@ -35,6 +35,7 @@
         Page head
     ---------------*/
     .page_title,
+    .page_title.medium,
     .page_title.small
     {
         font-size: 30px;
@@ -433,6 +434,19 @@
 
 
 
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .data
+    {
+        width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
+        padding: 48px 24px 200px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -481,13 +495,6 @@
 
     footer .socials
     {
-        position: relative;
-        top: 0;
-        right: 0;
-
-        order: 1;
-
-        width: 100%;
-        margin-bottom: 12px;
+        margin-top: 16px;
     }
 }
