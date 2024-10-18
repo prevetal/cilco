@@ -1118,7 +1118,7 @@ header .phone a
 
 .page_title
 {
-    font-size: 64px;
+    font-size: 56px;
     font-weight: 800;
     line-height: calc(100% + 8px);
 
@@ -1833,11 +1833,9 @@ header .phone a
 
 .first_section .title
 {
-    font-size: 64px;
+    font-size: 56px;
     font-weight: 800;
     line-height: calc(100% + 8px);
-
-    color: #000;
 }
 
 
@@ -3078,8 +3076,6 @@ header .phone a
     font-size: 24px;
     font-weight: 600;
     line-height: calc(100% + 8px);
-
-    color: #000;
 }
 
 
@@ -3088,8 +3084,6 @@ header .phone a
     line-height: calc(100% + 8px);
 
     margin-top: 8px;
-
-    color: #000;
 }
 
 
@@ -3099,8 +3093,6 @@ header .phone a
     line-height: calc(100% + 4px);
 
     margin-top: 16px;
-
-    color: #000;
 }
 
 
@@ -3319,8 +3311,6 @@ header .phone a
     line-height: calc(100% + 4px);
 
     margin-top: 12px;
-
-    color: #000;
 }
 
 
@@ -3432,8 +3422,6 @@ header .phone a
     line-height: calc(100% + 4px);
 
     margin-bottom: 8px;
-
-    color: #000;
 }
 
 
@@ -3459,8 +3447,6 @@ header .phone a
     padding-left: 20px;
 
     list-style-type: none;
-
-    color: #000;
 }
 
 
@@ -5331,8 +5317,6 @@ header .phone a
     line-height: calc(100% + 4px);
 
     margin-top: 24px;
-
-    color: #000;
 }
 
 
