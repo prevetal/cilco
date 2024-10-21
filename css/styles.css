@@ -6019,6 +6019,12 @@ footer .logo img
 
 
 
+footer .links
+{
+    margin-left: 45px;
+}
+
+
 footer .links .title
 {
     font-weight: 500;
@@ -6038,7 +6044,7 @@ footer .links .items
     display: flex;
     flex-direction: column;
 
-    max-width: 200px;
+    width: 200px;
 
     color: #344966;
 
@@ -6071,6 +6077,8 @@ footer .contacts
     display: flex;
     align-items: flex-end;
     flex-direction: column;
+
+    margin-left: auto;
 
     text-align: right;
 }

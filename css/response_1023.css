@@ -839,14 +839,13 @@
 
     footer .links
     {
-        width: calc(50% - 12px);
         margin-bottom: 40px;
     }
 
 
     footer .links .items
     {
-        max-width: 100%;
+        width: auto;
     }
 
 

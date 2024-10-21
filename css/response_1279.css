@@ -861,6 +861,12 @@
     }
 
 
+    footer .links
+    {
+        margin-left: 0;
+    }
+
+
     footer .contacts
     {
         display: flex;

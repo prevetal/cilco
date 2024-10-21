@@ -450,12 +450,6 @@
     /*------------
         Footer
     ------------*/
-    footer .links
-    {
-        width: 100%;
-    }
-
-
     footer .contacts
     {
         flex-direction: column;

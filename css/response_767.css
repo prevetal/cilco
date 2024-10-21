@@ -962,6 +962,12 @@
     /*------------
         Footer
     ------------*/
+    footer .links
+    {
+        width: 100%;
+    }
+
+
     footer .contacts
     {
         align-content: flex-start;
