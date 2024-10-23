@@ -313,6 +313,49 @@ button
 
 
 
+/*--------------
+    Fancybox
+--------------*/
+.fancybox__backdrop
+{
+    background: rgba(0, 0, 0, .6);
+}
+
+
+.fancybox__slide
+{
+    padding: 40px;
+}
+
+
+.fancybox__content > .f-button.is-close-btn,
+.is-compact .fancybox__content > .f-button.is-close-btn
+{
+    top: 40px;
+    right: 32px;
+
+    opacity: 1;
+
+    --f-button-width: 32px;
+    --f-button-height: 32px;
+    --f-button-border-radius: 0;
+    --f-button-color: #919191;
+    --f-button-hover-color: var(--text_color);
+    --f-button-svg-width: 32px;
+    --f-button-svg-height: 32px;
+    --f-button-bg: transparent;
+    --f-button-hover-bg: transparent;
+    --f-button-active-bg: transparent;
+}
+
+
+.fancybox__content > .f-button.is-close-btn svg
+{
+    stroke: none;
+}
+
+
+
 /*----------
     Tabs
 ----------*/
@@ -6233,4 +6276,36 @@ footer .exp
     margin-top: 8px;
 
     color: #eff2f9;
+}
+
+
+
+/*-----------
+    PopUp
+-----------*/
+.modal
+{
+    display: none;
+    visibility: visible !important;
+
+    width: 619px;
+    max-width: 100%;
+    padding: 40px 32px;
+
+    color: var(--text_color);
+    background: #fff;
+}
+
+
+.modal_title
+{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: calc(100% + 8px);
+}
+
+
+.modal .form
+{
+    margin-top: 24px;
 }

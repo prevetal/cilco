@@ -1,12 +1,6 @@
 @media print,
 (max-width: 1023px)
 {
-    /*-------------------
-        Global styles
-    -------------------*/
-
-
-
     /*--------------
         Fancybox
     --------------*/
@@ -874,5 +868,21 @@
         width: 100%;
         margin-top: 28px;
         margin-left: 0;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        width: 520px;
+    }
+
+
+    .modal_title
+    {
+        font-size: 28px;
     }
 }

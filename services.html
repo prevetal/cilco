@@ -538,7 +538,7 @@
 								<div class="val">Пн. – Пт. 09:00 – 17:00</div>
 							</div>
 
-							<button class="feedback_btn">Связаться с нами</button>
+							<button class="feedback_btn modal_btn" data-modal="feedback_modal">Связаться с нами</button>
 
 							<button class="check_order_btn">Проверить статус заказа</button>
 
@@ -571,6 +571,53 @@
 
 			<div class="overlay"></div>
 		</div>
+
+
+		<section class="modal" id="feedback_modal">
+			<div class="modal_title">Заголовок</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="label">Введите имя *</div>
+
+					<div class="field">
+						<input type="text" name="" value="" class="input">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="label">Введите телефон *</div>
+
+					<div class="field">
+						<input type="tel" name="" value="" class="input">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="label">Электронная почта *</div>
+
+					<div class="field">
+						<input type="email" name="" value="" class="input">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Отправить</button>
+				</div>
+
+				<div class="agree">
+					<label class="checkbox">
+						<input type="checkbox" name="agree" checked>
+
+						<div class="check">
+							<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+						</div>
+
+						<div>Даю свое согласие на обработку персональных данных</div>
+					</label>
+				</div>
+			</form>
+		</section>
 
 
 		<!-- Connecting javascript files -->

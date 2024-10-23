@@ -16,7 +16,15 @@
     --------------*/
     .fancybox__slide
     {
-        padding: 16px;
+        padding: 0;
+    }
+
+
+    .fancybox__content > .f-button.is-close-btn,
+    .is-compact .fancybox__content > .f-button.is-close-btn
+    {
+        top: 20px;
+        right: 20px;
     }
 
 
@@ -490,5 +498,16 @@
     footer .socials
     {
         margin-top: 16px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding-right: 24px;
+        padding-left: 24px;
     }
 }
