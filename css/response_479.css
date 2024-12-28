@@ -1,0 +1,557 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 28px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 0;
+    }
+
+
+    .fancybox__content > .f-button.is-close-btn,
+    .is-compact .fancybox__content > .f-button.is-close-btn
+    {
+        top: 20px;
+        right: 20px;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header .logo img
+    {
+        height: 16px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_title,
+    .page_title.medium,
+    .page_title.small
+    {
+        font-size: 30px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 22px;
+    }
+
+    .text_block h3
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 32px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .submit_btn
+    {
+        padding: 14px 28px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .title
+    {
+        font-size: 30px;
+    }
+
+
+    .first_section .desc
+    {
+        width: 100%;
+    }
+
+
+    .first_section .link
+    {
+        margin-top: 32px;
+    }
+
+
+    .first_section .link a
+    {
+        padding: 14px 28px;
+    }
+
+
+    .first_section .image
+    {
+        position: relative;
+        right: 0;
+        bottom: 0;
+
+        width: 100%;
+        margin: 40px auto 0;
+    }
+
+
+    .first_section .bg
+    {
+        width: 560px;
+        height: 329px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .service .title
+    {
+        font-size: 22px;
+    }
+
+
+
+    .services .tab_content .links.level3 .columns
+    {
+        column-count: 2;
+    }
+
+
+
+    /*------------------
+        Project info
+    ------------------*/
+    .project_info .our_advantages .item
+    {
+        padding: 16px;
+    }
+
+
+
+    /*--------------------
+        Other projects
+    --------------------*/
+    .other_projects .row
+    {
+        margin-left: 0;
+    }
+
+
+    .other_projects .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*--------------------
+        Other articles
+    --------------------*/
+    .other_articles .row
+    {
+        margin-left: 0;
+    }
+
+
+    .other_articles .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------------
+        Services head
+    -------------------*/
+    .services_head .data .methods .vals
+    {
+        max-width: calc(100% + 8px);
+        margin-left: -8px;
+    }
+
+
+    .services_head .data .methods .vals > *
+    {
+        font-size: 12px;
+
+        margin-bottom: 8px;
+        margin-left: 8px;
+        padding: 4px 12px;
+    }
+
+
+    .services_head .data .btn
+    {
+        width: 100%;
+    }
+
+
+
+    .services_head .advantages .grid
+    {
+        display: flex;
+        flex-direction: column;
+
+        gap: 24px;
+    }
+
+
+    .services_head .advantages .item
+    {
+        min-height: 180px;
+        padding: 24px;
+    }
+
+
+    .services_head .advantages .title
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-------------------
+        Services grid
+    -------------------*/
+    .services_grid .row
+    {
+        margin-left: 0;
+    }
+
+
+    .services_grid .row > *,
+    .services_grid .row > *.middle,
+    .services_grid .row > *.big
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+
+    .services_grid .item
+    {
+        min-height: 160px;
+        padding: 19px;
+    }
+
+
+    .services_grid .item.big,
+    .services_grid .item.white,
+    .services_grid .item.bg,
+    .services_grid .item.very_big
+    {
+        padding: 20px;
+    }
+
+
+    .services_grid .item.shadow .icon,
+    .services_grid .item.shadow2 .icon,
+    .services_grid .item.shadow3 .icon
+    {
+        height: 68px;
+    }
+
+    .services_grid .item.big .icon
+    {
+        width: 68px;
+        height: 68px;
+    }
+
+
+    .services_grid .item .name
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*---------------------
+        Services grid 2
+    ---------------------*/
+    .services_grid2 .row
+    {
+        margin-left: 0;
+    }
+
+
+    .services_grid2 .row > *,
+    .services_grid2 .item.big
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+
+    .services_grid2 .item
+    {
+        min-height: 180px;
+        padding: 24px;
+    }
+
+
+    .services_grid2 .item.border
+    {
+        padding: 23px;
+    }
+
+
+
+    /*-------------------
+        Services list
+    -------------------*/
+    .services_list .item .name
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*------------------
+        Service info
+    ------------------*/
+    .service_info .item.big_w
+    {
+        padding-bottom: 124px;
+    }
+
+
+    .service_info .item.big_w:after
+    {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .service_info .item.big_w .desc
+    {
+        width: 100%;
+    }
+
+
+    .service_info .item .thumb
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+
+
+    /*--------------------
+        Service prices
+    --------------------*/
+    .service_prices .row
+    {
+        margin-left: 0;
+    }
+
+
+    .service_prices .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .service_prices .item
+    {
+        min-height: 180px;
+        padding: 23px;
+    }
+
+    .service_prices .item.bg,
+    .service_prices .item.white
+    {
+        padding: 24px;
+    }
+
+
+    .service_prices .exp
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*----------------------------
+        Cooperation advantages
+    ----------------------------*/
+    .cooperation_advantages .exp
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*---------------
+        Questions
+    ---------------*/
+    .questions .item .title
+    {
+        font-size: 16px;
+
+        min-height: 48px;
+        padding-right: 48px;
+    }
+
+
+
+    /*----------------
+        Guarantees
+    ----------------*/
+    .guarantees .row
+    {
+        margin-left: 0;
+    }
+
+
+    .guarantees .row > *,
+    .guarantees .item.big
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+
+    .guarantees .item
+    {
+        min-height: 186px;
+        padding: 24px;
+    }
+
+
+    .guarantees .item.border
+    {
+        padding: 23px;
+    }
+
+
+
+    .guarantees .desc
+    {
+        padding: 24px;
+    }
+
+
+
+    /*-----------
+        Certs
+    -----------*/
+    .certs .cert .name
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .data
+    {
+        width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
+        padding: 48px 24px 260px;
+    }
+
+
+    .action_block .img
+    {
+        width: calc(100% - 48px);
+        height: 224px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .contacts
+    {
+        flex-direction: column;
+    }
+
+
+    footer .contacts .work_time
+    {
+        position: relative;
+        top: 0;
+
+        margin-top: 4px;
+    }
+
+
+    footer .contacts .feedback_btn
+    {
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+
+    footer .contacts .check_order_btn
+    {
+        position: relative;
+        top: 0;
+
+        margin-top: 4px;
+    }
+
+
+    footer .bottom .cont > *:first-child
+    {
+        order: 2;
+    }
+
+
+    footer .socials
+    {
+        margin-top: 16px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+}
