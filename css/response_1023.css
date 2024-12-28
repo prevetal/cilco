@@ -293,7 +293,8 @@
     /*--------------
         Services
     --------------*/
-    .services .tab_content .tabs
+    .services .tab_content .tabs,
+    .services .tab_content .links
     {
         display: block;
         overflow: auto;
@@ -312,7 +313,14 @@
     }
 
 
-    .services .tab_content .tabs::-webkit-scrollbar
+    .services .tab_content .links
+    {
+        margin-bottom: 0;
+    }
+
+
+    .services .tab_content .tabs::-webkit-scrollbar,
+    .services .tab_content .links::-webkit-scrollbar
     {
         display: none !important;
 
@@ -322,13 +330,16 @@
         background-color: transparent !important;
     }
 
-    .services .tab_content .tabs::-webkit-scrollbar-thumb
+
+    .services .tab_content .tabs::-webkit-scrollbar-thumb,
+    .services .tab_content .links::-webkit-scrollbar-thumb
     {
         background-color: transparent !important;
     }
 
 
-    .services .tabs .btn[data-level='level2']
+    .services .tabs .btn[data-level='level2'],
+    .services .tab_content .links > *
     {
         position: relative;
 
@@ -344,7 +355,15 @@
         scroll-snap-align: start;
     }
 
-    .services .tabs .btn[data-level='level2'] + .btn[data-level='level2']
+
+    .services .tab_content .links > *
+    {
+        padding: 0;
+    }
+
+
+    .services .tabs .btn[data-level='level2'] + .btn[data-level='level2'],
+    .services .tab_content .links > * + *
     {
         margin-left: 4px;
     }
@@ -358,6 +377,37 @@
         left: 16px;
 
         margin: auto 0;
+    }
+
+
+    .services .tab_content .links .btn span
+    {
+        width: auto;
+        margin: 0 12px;
+    }
+
+
+    .services .tab_content .links.level2 .btn span
+    {
+        width: auto;
+        margin-left: 0;
+    }
+
+
+    .services .tab_content .links.level3
+    {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .services .tab_content .links.level3 .columns
+    {
+        width: 100%;
+
+        column-count: 3;
     }
 
 
@@ -401,6 +451,12 @@
     }
 
 
+    .action_block .btn
+    {
+        margin-top: 32px;
+    }
+
+
     .action_block .form
     {
         width: 100%;
@@ -421,7 +477,7 @@
     /*----------------
         Routes map
     ----------------*/
-    .routes_map .route .path
+    /* .routes_map .route .path
     {
         width: 100%;
         margin-bottom: 32px;
@@ -431,7 +487,7 @@
     .routes_map .route .info
     {
         width: calc(100% - 224px);
-    }
+    } */
 
 
 
@@ -664,6 +720,39 @@
 
 
 
+    /*---------------------
+        Services grid 2
+    ---------------------*/
+    .services_grid2 .row > *
+    {
+        width: calc(33.333% - 16px);
+        max-width: calc(33.333% - 16px);
+    }
+
+
+    .services_grid2 .item
+    {
+        min-height: 208px;
+
+        gap: 20px;
+    }
+
+
+    .services_grid2 .item.big
+    {
+        width: calc(100% - 16px);
+        max-width: calc(100% - 16px);
+    }
+
+
+    .services_grid2 .item.big .icon
+    {
+        width: 90px;
+        height: 90px;
+    }
+
+
+
     /*------------------
         Service info
     ------------------*/
@@ -767,11 +856,32 @@
     /*----------------
         Guarantees
     ----------------*/
-    .guarantees .row > *,
-    .guarantees .item.big
+    .guarantees .row > *
     {
         width: calc(33.333% - 16px);
         max-width: calc(33.333% - 16px);
+    }
+
+
+    .guarantees .item
+    {
+        min-height: 208px;
+
+        gap: 20px;
+    }
+
+
+    .guarantees .item.big
+    {
+        width: calc(100% - 16px);
+        max-width: calc(100% - 16px);
+    }
+
+
+    .guarantees .item.big .icon
+    {
+        width: 90px;
+        height: 90px;
     }
 
 

@@ -77,6 +77,13 @@
     }
 
 
+    header .menu .sub_menu .row
+    {
+        max-width: calc(100% + 34px);
+        margin-left: -34px;
+    }
+
+
     header .links > * + *
     {
         margin-left: 24px;
@@ -221,7 +228,8 @@
     /*--------------
         Services
     --------------*/
-    .services .tabs .btn[data-level='level2']
+    .services .tabs .btn[data-level='level2'],
+    .services .tab_content .links .btn
     {
         padding: 16px;
     }
@@ -328,25 +336,33 @@
     }
 
 
+    .action_block .btn
+    {
+        font-size: 18px;
+
+        padding: 20px 32px;
+    }
+
+
     .action_block .form
     {
         width: 480px;
     }
 
 
-    .action_block .img
+    /* .action_block .img
     {
         right: 48px;
 
         width: calc(100% - 640px);
-    }
+    } */
 
 
 
     /*----------------
         Routes map
     ----------------*/
-    .routes_map .route
+    /* .routes_map .route
     {
         padding: 24px;
     }
@@ -396,7 +412,7 @@
     {
         margin-top: 24px;
         margin-bottom: 0;
-    }
+    } */
 
 
 
@@ -695,10 +711,11 @@
     }
 
 
-    .services_head .advantages .method,
-    .services_head .advantages .tg_link
+    .services_head .advantages .btn
     {
-        bottom: 32px;
+        font-size: 18px;
+
+        padding: 20px 32px;
     }
 
 
@@ -757,6 +774,16 @@
 
         width: 280px;
         height: 280px;
+    }
+
+
+
+    /*---------------------
+        Services grid 2
+    ---------------------*/
+    .services_grid2 .item .name
+    {
+        font-size: var(--font_size);
     }
 
 
@@ -940,26 +967,7 @@
     ----------------*/
     .guarantees .item .name
     {
-        font-size: 16px;
-    }
-
-
-    .guarantees .item.shadow .icon
-    {
-        height: 80px;
-    }
-
-
-    .guarantees .item.big .icon
-    {
-        width: 100px;
-        height: 100px;
-    }
-
-
-    .guarantees .desc
-    {
-        padding: 24px;
+        font-size: var(--font_size);
     }
 
 

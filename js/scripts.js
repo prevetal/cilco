@@ -57,6 +57,32 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
+	// Services head slider
+	const servicesHeadSliders = [],
+		servicesHead = document.querySelectorAll('.services_head .advantages .swiper')
+
+	servicesHead.forEach((el, i) => {
+		el.classList.add('services_head_s' + i)
+
+		let options = {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			lazy: true,
+			spaceBetween: 0,
+			slidesPerView: 1,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			}
+		}
+
+		servicesHeadSliders.push(new Swiper('.services_head_s' + i, options))
+	})
+
+
 	// Mob. menu
 	$('.mob_header .mob_menu_btn, .overlay, header .mob_close_btn').click((e) => {
 		e.preventDefault()
@@ -246,6 +272,136 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 	boxes.forEach(element => observer.observe(element))
+
+
+	// Services
+	$('.services .tab_content .links.level1 .btn').click(function(e) {
+		e.preventDefault()
+
+		if (!$(this).hasClass('active')) {
+			let content = $(this).data('level2')
+
+			$('.services .tab_content .links .btn').removeClass('active')
+			$('.services .tab_content .links.level2, .services .tab_content .links.level3').hide()
+
+			$(this).addClass('active')
+
+			$('.services .tab_content .links.level2_' + content).fadeIn(300)
+		} else {
+			$(this).removeClass('active')
+
+			$('.services .tab_content .links.level2, .services .tab_content .links.level3').hide()
+		}
+	})
+
+	$('.services .tab_content .links.level2 .btn').click(function(e) {
+		e.preventDefault()
+
+		if (!$(this).hasClass('active')) {
+			let content = $(this).data('level3')
+
+			$('.services .tab_content .links.level2 .btn').removeClass('active')
+			$('.services .tab_content .links.level3').hide()
+
+			$(this).addClass('active')
+
+			$('.services .tab_content .links.level3_' + content).fadeIn(300)
+		} else {
+			$(this).removeClass('active')
+
+			$('.services .tab_content .links.level3').hide()
+		}
+	})
+
+
+	if (is_touch_device() && WW > 1023) {
+		const subMenus = document.querySelectorAll('header .menu .sub_menu')
+
+		// Submenu on the touch screen
+		$('header .menu_item > a.sub_link').addClass('touch_link')
+
+		$('header .menu_item > a.sub_link').click(function (e) {
+			const dropdown = $(this).next()
+
+			if (dropdown.css('visibility') === 'hidden') {
+				e.preventDefault()
+
+				subMenus.forEach(el => el.classList.remove('show'))
+				dropdown.addClass('show')
+
+				BODY.style = 'cursor: pointer;'
+			}
+		})
+
+		// Close the submenu when clicking outside it
+		document.addEventListener('click', e => {
+			if ($(e.target).closest('.menu').length === 0) {
+				subMenus.forEach(el => el.classList.remove('show'))
+
+				BODY.style = 'cursor: default;'
+			}
+		})
+	}
+
+
+	// Sub menu - Directions
+	$('header .menu .sub_menu .directions a').click(function(e) {
+		e.preventDefault()
+
+		if (!$(this).hasClass('active')) {
+			let content = $(this).data('level2')
+
+			$('header .menu .sub_menu .directions a').removeClass('active')
+			$('header .menu .sub_menu_directions .level2, header .menu .sub_menu_directions .level3, header .menu .sub_menu_directions .level4').hide()
+
+			$(this).addClass('active')
+
+			$('header .menu .sub_menu_directions .level2_' + content).fadeIn(300)
+		} else {
+			$(this).removeClass('active')
+
+			$('header .menu .sub_menu_directions .level2, header .menu .sub_menu_directions .level3, header .menu .sub_menu_directions .level4').hide()
+		}
+	})
+
+
+	$('header .menu .sub_menu .countries_level1 .btn').click(function(e) {
+		e.preventDefault()
+
+		if (!$(this).hasClass('active')) {
+			let content = $(this).data('level2')
+
+			$('header .menu .sub_menu .countries_level1 .btn').removeClass('active')
+			$('header .menu .sub_menu .countries_level2, header .menu .sub_menu .countries_level3').hide()
+
+			$(this).addClass('active')
+
+			$('header .menu .sub_menu .countries_level2_' + content).fadeIn(300)
+		} else {
+			$(this).removeClass('active')
+
+			$('header .menu .sub_menu .countries_level2, header .menu .sub_menu .countries_level3').hide()
+		}
+	})
+
+	$('header .menu .sub_menu .countries_level2 .btn').click(function(e) {
+		e.preventDefault()
+
+		if (!$(this).hasClass('active')) {
+			let content = $(this).data('level3')
+
+			$('header .menu .sub_menu .countries_level2 .btn').removeClass('active')
+			$('header .menu .sub_menu .countries_level3').hide()
+
+			$(this).addClass('active')
+
+			$('header .menu .sub_menu .countries_level3_' + content).fadeIn(300)
+		} else {
+			$(this).removeClass('active')
+
+			$('header .menu .sub_menu .countries_level3').hide()
+		}
+	})
 })
 
 

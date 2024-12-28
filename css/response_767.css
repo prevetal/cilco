@@ -264,7 +264,7 @@
     ------------------*/
     .action_block .data
     {
-        padding: 30px 30px 200px;
+        padding: 30px 30px 300px;
     }
 
 
@@ -273,15 +273,20 @@
         justify-content: center;
 
         width: 100%;
-        margin-bottom: 24px;
 
         text-align: center;
     }
 
 
+    .action_block .btn
+    {
+        margin-top: 24px;
+    }
+
+
     .action_block .img
     {
-        width: 260px;
+        width: calc(100% - 60px);
     }
 
 
@@ -289,7 +294,7 @@
     /*----------------
         Routes map
     ----------------*/
-    .routes_map .route .path
+    /* .routes_map .route .path
     {
         margin-bottom: 28px;
     }
@@ -305,7 +310,7 @@
     {
         width: 100%;
         margin-bottom: 24px;
-    }
+    } */
 
 
 
@@ -596,6 +601,21 @@
     }
 
 
+    .services_head .advantages .slider
+    {
+        grid-row: auto / auto;
+    }
+
+
+    .services_head .advantages .slider .swiper
+    {
+        position: relative;
+
+        height: auto;
+        padding-bottom: 44px;
+    }
+
+
 
     /*-------------------
         Services grid
@@ -647,6 +667,38 @@
     .services_grid .item.very_big .icon
     {
         display: none;
+    }
+
+
+
+    /*---------------------
+        Services grid 2
+    ---------------------*/
+    .services_grid2 .row > *,
+    .services_grid2 .item.big
+    {
+        width: calc(50% - 16px);
+        max-width: calc(50% - 16px);
+    }
+
+
+    .services_grid2 .item
+    {
+        min-height: 180px;
+        padding: 16px;
+    }
+
+
+    .services_grid2 .item.big .icon
+    {
+        width: 64px;
+        height: 64px;
+    }
+
+
+    .services_grid2 .item.border
+    {
+        padding: 15px;
     }
 
 
@@ -884,31 +936,23 @@
     }
 
 
-    .guarantees .item,
-    .guarantees .item.shadow
+    .guarantees .item
     {
-        min-height: 200px;
-        padding: 15px;
-    }
-
-
-    .guarantees .item.shadow .icon
-    {
-        height: 68px;
-    }
-
-
-    .guarantees .item.big,
-    .guarantees .item.bg
-    {
+        min-height: 180px;
         padding: 16px;
     }
 
 
     .guarantees .item.big .icon
     {
-        width: 80px;
-        height: 80px;
+        width: 64px;
+        height: 64px;
+    }
+
+
+    .guarantees .item.border
+    {
+        padding: 15px;
     }
 
 

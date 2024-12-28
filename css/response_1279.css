@@ -57,6 +57,41 @@
     }
 
 
+    header .menu .sub_menu
+    {
+        min-height: 360px;
+        padding: 30px 0;
+    }
+
+
+    header .menu .sub_menu .directions
+    {
+        width: 212px;
+    }
+
+
+    header .menu .sub_menu .countries
+    {
+        width: calc(100% - 280px);
+    }
+
+
+    header .menu .sub_menu .countries_level1
+    {
+        width: 176px;
+    }
+
+    header .menu .sub_menu .countries_level2
+    {
+        width: 192px;
+    }
+
+    header .menu .sub_menu .countries_level3
+    {
+        width: calc(100% - 470px);
+    }
+
+
     header .search
     {
         order: 3;
@@ -248,6 +283,31 @@
 
 
 
+    .services .tab_content .tabs
+    {
+        width: 316px;
+    }
+
+
+    .services .tab_content .tab_content.active
+    {
+        width: calc(100% - 340px);
+    }
+
+
+    .services .tab_content .links
+    {
+        width: 276px;
+    }
+
+
+    .services .tab_content .links.level3 .columns
+    {
+        column-count: 2;
+    }
+
+
+
     /*--------------
         Projects
     --------------*/
@@ -306,7 +366,16 @@
     ------------------*/
     .action_block .data
     {
+        min-height: 320px;
         padding: 32px;
+    }
+
+
+    .action_block .btn
+    {
+        font-size: 16px;
+
+        padding: 16px 32px;
     }
 
 
@@ -316,11 +385,20 @@
     }
 
 
-    .action_block .img
+    /* .action_block .img
     {
         right: 32px;
 
         width: calc(100% - 564px);
+    } */
+
+
+    .action_block .img
+    {
+        right: 40px;
+
+        width: 400px;
+        height: 264px;
     }
 
 
@@ -328,7 +406,7 @@
     /*----------------
         Routes map
     ----------------*/
-    .routes_map .route .path
+    /* .routes_map .route .path
     {
         width: 240px;
     }
@@ -359,7 +437,7 @@
         font-size: 16px;
 
         padding: 12px 24px;
-    }
+    } */
 
 
 
@@ -544,10 +622,18 @@
     }
 
 
-    .services_head .advantages .method,
-    .services_head .advantages .tg_link
+    .services_head .advantages .btn
     {
-        bottom: 24px;
+        font-size: 16px;
+
+        margin-top: 24px;
+        padding: 16px 32px;
+    }
+
+
+    .services_head .advantages .slider .swiper-slide
+    {
+        padding: 24px;
     }
 
 
@@ -640,6 +726,26 @@
 
         width: 200px;
         height: 200px;
+    }
+
+
+
+    /*---------------------
+        Services grid 2
+    ---------------------*/
+    .services_grid2 .row > *,
+    .services_grid2 .item.big
+    {
+        width: calc(25% - 16px);
+        max-width: calc(25% - 16px);
+    }
+
+
+    .services_grid2 .item.big .icon,
+    .services_grid2 .item .icon.big
+    {
+        width: 64px;
+        height: 64px;
     }
 
 
@@ -800,16 +906,10 @@
     }
 
 
-    .guarantees .item .name
-    {
-        font-size: 15px;
-    }
-
-
     .guarantees .item.big .icon
     {
-        width: 88px;
-        height: 88px;
+        width: 64px;
+        height: 64px;
     }
 
 
