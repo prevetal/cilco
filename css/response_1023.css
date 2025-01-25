@@ -705,32 +705,16 @@
         Services grid
     -------------------*/
     .services_grid .row > *,
-    .services_grid .row > *.big
-    {
-        width: calc(33.333% - 16px);
-    }
-
-
-
-    .services_grid .item.very_big:before
-    {
-        width: 540px;
-        height: 224px;
-    }
-
-
-
-    /*---------------------
-        Services grid 2
-    ---------------------*/
-    .services_grid2 .row > *
+    .services_grid .item.big,
+    .services_grid.big .row > *,
+    .services_grid.big .item.big
     {
         width: calc(33.333% - 16px);
         max-width: calc(33.333% - 16px);
     }
 
 
-    .services_grid2 .item
+    .services_grid .item
     {
         min-height: 208px;
 
@@ -738,17 +722,24 @@
     }
 
 
-    .services_grid2 .item.big
+    .services_grid .item.big
     {
         width: calc(100% - 16px);
         max-width: calc(100% - 16px);
     }
 
 
-    .services_grid2 .item.big .icon
+    .services_grid .item.big .icon
     {
         width: 90px;
         height: 90px;
+    }
+
+
+    .services_grid.big .item.big .icon
+    {
+        width: 60px;
+        height: 60px;
     }
 
 
@@ -767,6 +758,13 @@
     {
         grid-column: 1 / 3;
         grid-row: auto / auto;
+    }
+
+
+    .service_info .bottom_item:before
+    {
+        width: 540px;
+        height: 224px;
     }
 
 
@@ -927,6 +925,84 @@
 
         width: 180px;
         margin: 0 auto;
+    }
+
+
+
+    /*----------------------
+        Delivery options
+    ----------------------*/
+    .delivery_options .region,
+    .delivery_options .country
+    {
+        width: 100%;
+    }
+
+
+    .delivery_options .list
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        min-height: 0;
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scroll-padding: 0 24px;
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .delivery_options .list::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+
+    .delivery_options .list::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .delivery_options .list > *
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+
+        scroll-snap-align: start;
+    }
+
+    .delivery_options .list > * + *
+    {
+        margin-left: 16px;
+    }
+
+
+    .delivery_options .slider
+    {
+        width: 100%;
+        margin-top: 4px;
+    }
+
+
+    .delivery_options .item
+    {
+        min-height: 280px;
     }
 
 

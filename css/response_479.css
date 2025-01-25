@@ -253,8 +253,9 @@
 
 
     .services_grid .row > *,
-    .services_grid .row > *.middle,
-    .services_grid .row > *.big
+    .services_grid .item.big,
+    .services_grid.big .row > *,
+    .services_grid.big .item.big
     {
         width: 100%;
         max-width: 100%;
@@ -264,67 +265,12 @@
 
     .services_grid .item
     {
-        min-height: 160px;
-        padding: 19px;
-    }
-
-
-    .services_grid .item.big,
-    .services_grid .item.white,
-    .services_grid .item.bg,
-    .services_grid .item.very_big
-    {
-        padding: 20px;
-    }
-
-
-    .services_grid .item.shadow .icon,
-    .services_grid .item.shadow2 .icon,
-    .services_grid .item.shadow3 .icon
-    {
-        height: 68px;
-    }
-
-    .services_grid .item.big .icon
-    {
-        width: 68px;
-        height: 68px;
-    }
-
-
-    .services_grid .item .name
-    {
-        font-size: 16px;
-    }
-
-
-
-    /*---------------------
-        Services grid 2
-    ---------------------*/
-    .services_grid2 .row
-    {
-        margin-left: 0;
-    }
-
-
-    .services_grid2 .row > *,
-    .services_grid2 .item.big
-    {
-        width: 100%;
-        max-width: 100%;
-        margin-left: 0;
-    }
-
-
-    .services_grid2 .item
-    {
         min-height: 180px;
         padding: 24px;
     }
 
 
-    .services_grid2 .item.border
+    .services_grid .item.border
     {
         padding: 23px;
     }
@@ -390,12 +336,6 @@
     .service_prices .item
     {
         min-height: 180px;
-        padding: 23px;
-    }
-
-    .service_prices .item.bg,
-    .service_prices .item.white
-    {
         padding: 24px;
     }
 
@@ -495,6 +435,16 @@
     {
         width: calc(100% - 48px);
         height: 224px;
+    }
+
+
+
+    /*----------------------
+        Delivery options
+    ----------------------*/
+    .delivery_options .item .title
+    {
+        font-size: 22px;
     }
 
 

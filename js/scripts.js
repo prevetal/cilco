@@ -83,6 +83,41 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
+	// Delivery options slider
+	const deliveryOptionsSliders = [],
+		deliveryOptions = document.querySelectorAll('.delivery_options .swiper')
+
+	deliveryOptions.forEach((el, i) => {
+		el.classList.add('delivery_options_s' + i)
+
+		let options = {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 0,
+			slidesPerView: 1,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			on: {
+				init: swiper => setHeight(swiper.el.querySelectorAll('.item')),
+				resize: swiper => {
+					let items = swiper.el.querySelectorAll('.item')
+
+					items.forEach(el => el.style.height = 'auto')
+
+					setHeight(items)
+				}
+			}
+		}
+
+		deliveryOptionsSliders.push(new Swiper('.delivery_options_s' + i, options))
+	})
+
+
 	// Mob. menu
 	$('.mob_header .mob_menu_btn, .overlay, header .mob_close_btn').click((e) => {
 		e.preventDefault()
@@ -400,6 +435,41 @@ document.addEventListener('DOMContentLoaded', function () {
 			$(this).removeClass('active')
 
 			$('header .menu .sub_menu .countries_level3').hide()
+		}
+	})
+
+
+	// Delivery options
+	let currentRegionIndex = 1,
+		currentCountryIndex = 1
+
+	$('.delivery_options .region .list > *').mouseenter(function() {
+		if(!$(this).find('.btn').hasClass('active')) {
+			currentRegionIndex = $(this).index() + 1
+			currentCountryIndex = 1
+
+			$('.delivery_options .region .list .btn').removeClass('active')
+			$(this).find('.btn').addClass('active')
+
+			$('.delivery_options .country').hide()
+			$('.delivery_options .country.region' + currentRegionIndex).fadeIn(300)
+
+			$('.delivery_options .slider').hide()
+			$('.delivery_options .region'+ currentRegionIndex +'_country' + currentCountryIndex).fadeIn(300)
+		}
+	})
+
+	$('.delivery_options .country .list > *').mouseenter(function() {
+		if(!$(this).find('.btn').hasClass('active')) {
+			currentCountryIndex = $(this).index() + 1
+
+			let parentList = $(this).closest('.country')
+
+			parentList.find('.btn').removeClass('active')
+			$(this).find('.btn').addClass('active')
+
+			$('.delivery_options .slider').hide()
+			$('.delivery_options .region'+ currentRegionIndex +'_country' + currentCountryIndex).fadeIn(300)
 		}
 	})
 })

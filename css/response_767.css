@@ -621,82 +621,31 @@
         Services grid
     -------------------*/
     .services_grid .row > *,
-    .services_grid .row > *.middle,
-    .services_grid .row > *.big
-    {
-        width: calc(50% - 16px);
-    }
-
-
-    .services_grid .item
-    {
-        min-height: 180px;
-        padding: 15px;
-    }
-
     .services_grid .item.big,
-    .services_grid .item.white,
-    .services_grid .item.bg,
-    .services_grid .item.very_big
-    {
-        padding: 16px;
-    }
-
-
-    .services_grid .item.big .icon
-    {
-        width: 80px;
-        height: 80px;
-    }
-
-
-    .services_grid .item.very_big .name
-    {
-        font-size: 18px;
-
-        width: 100%;
-    }
-
-
-    .services_grid .item.very_big .desc
-    {
-        width: 100%;
-    }
-
-
-    .services_grid .item.very_big .icon
-    {
-        display: none;
-    }
-
-
-
-    /*---------------------
-        Services grid 2
-    ---------------------*/
-    .services_grid2 .row > *,
-    .services_grid2 .item.big
+    .services_grid.big .row > *,
+    .services_grid.big .item.big
     {
         width: calc(50% - 16px);
         max-width: calc(50% - 16px);
     }
 
 
-    .services_grid2 .item
+    .services_grid .item
     {
         min-height: 180px;
         padding: 16px;
     }
 
 
-    .services_grid2 .item.big .icon
+    .services_grid .item.big .icon,
+    .services_grid.big .item.big .icon
     {
         width: 64px;
         height: 64px;
     }
 
 
-    .services_grid2 .item.border
+    .services_grid .item.border
     {
         padding: 15px;
     }
@@ -779,6 +728,32 @@
     }
 
 
+    .service_info .bottom_item
+    {
+        padding: 23px;
+    }
+
+
+    .service_info .bottom_item .name
+    {
+        font-size: 18px;
+
+        width: 100%;
+    }
+
+
+    .service_info .bottom_item .desc
+    {
+        width: 100%;
+    }
+
+
+    .service_info .bottom_item .icon
+    {
+        display: none;
+    }
+
+
 
     /*--------------------
         Service prices
@@ -789,20 +764,7 @@
     }
 
 
-    .service_prices .item.shadow .icon
-    {
-        width: 80px;
-        height: 80px;
-    }
-
-
     .service_prices .item
-    {
-        padding: 15px;
-    }
-
-    .service_prices .item.bg,
-    .service_prices .item.white
     {
         padding: 16px;
     }

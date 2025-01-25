@@ -740,48 +740,8 @@
     /*-------------------
         Services grid
     -------------------*/
-    .services_grid .item .name
-    {
-        font-size: var(--font_size);
-    }
-
-
-    .services_grid .item.shadow .icon,
-    .services_grid .item.shadow2 .icon,
-    .services_grid .item.shadow3 .icon
-    {
-        height: 80px;
-    }
-
-
-    .services_grid .item.big .icon
-    {
-        width: 100px;
-        height: 100px;
-    }
-
-
-    .services_grid .item.very_big .exp
-    {
-        padding: 20px;
-    }
-
-
-    .services_grid .item.very_big .icon
-    {
-        right: 48px;
-        bottom: 48px;
-
-        width: 280px;
-        height: 280px;
-    }
-
-
-
-    /*---------------------
-        Services grid 2
-    ---------------------*/
-    .services_grid2 .item .name
+    .services_grid .item .name,
+    .services_grid .item .name.small
     {
         font-size: var(--font_size);
     }
@@ -813,6 +773,27 @@
     }
 
 
+    .service_info .bottom_item
+    {
+        margin-top: 52px;
+    }
+
+
+    .service_info .bottom_item .exp
+    {
+        padding: 20px;
+    }
+
+
+    .service_info .bottom_item .icon
+    {
+        right: 48px;
+
+        width: 280px;
+        height: 280px;
+    }
+
+
 
     /*--------------------
         Service prices
@@ -820,18 +801,6 @@
     .service_prices .item
     {
         min-height: 200px;
-    }
-
-
-    .service_prices .item.shadow2 .icon
-    {
-        height: 80px;
-    }
-
-    .service_prices .item.shadow .icon
-    {
-        width: 100px;
-        height: 100px;
     }
 
 
@@ -1042,6 +1011,36 @@
 
         width: 240px;
         max-width: calc(100% - 48px);
+    }
+
+
+
+    /*----------------------
+        Delivery options
+    ----------------------*/
+    .delivery_options .list
+    {
+        max-height: 372px;
+        padding-right: 12px;
+    }
+
+
+    .delivery_options .list .btn
+    {
+        padding: 16px;
+    }
+
+
+    .delivery_options .item
+    {
+        padding: 24px;
+    }
+
+
+    .delivery_options .item .title,
+    .delivery_options .item .desc
+    {
+        width: 408px;
     }
 
 
